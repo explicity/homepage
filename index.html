@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 		<title>Résumé</title>
 		<link
 			rel="stylesheet"
@@ -14,7 +15,7 @@
 				Inspired by <a href="https://en.wikipedia.org/wiki/Emilia_Clarke" rel="external">Emilia Clarke</a> &#x1F478;
 			</div>
 		</header>
-		<main>
+		<main class="bg" id="main">
 			<article>
 				<div class="page" style="border-color: midnightblue;">
 					<div class="stackable grid">
@@ -26,7 +27,7 @@
 										data="./assets/images/logo.svg"
 										role="img"
 										aria-label="My profile picture"
-										style="width: 130px"
+										style="width: 120px"
 									></object>
 								</div>
 							</div>
@@ -114,7 +115,7 @@
 											the sea. Any sea. They did for me. I was born to rule the
 											Seven Kingdoms, and I will.
 										</p>
-										<p style="opacity: 0.75;">*Actually, dragons is all that matters.</p>
+										<p class="additional-intro">*Actually, <button class="hvr-sweep-to-right bg-toggle" onclick="toggle()">dragons</button> is all that matters.</p>
 									</div>
 								</div>
 							</div>
@@ -468,6 +469,11 @@
 				var audio = document.getElementById("audio");
 				audio.play();
 			}
+
+      function toggle() {
+        var main = document.getElementById("main");
+        main.classList.toggle('bg-img')
+      }
 		</script>
 	</body>
 </html>
