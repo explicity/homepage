@@ -26,6 +26,10 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
+    "url": "assets/bg.jpg",
+    "revision": "fffca7c84da292ce2f63ce5e652603ed"
+  },
+  {
     "url": "assets/images/logo.svg",
     "revision": "302739ba0bb2ea96af5f1dd2399aa9e3"
   },
