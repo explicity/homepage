@@ -26,7 +26,7 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
-    "url": "assets/bg.jpg",
+    "url": "assets/images/bg.jpg",
     "revision": "fffca7c84da292ce2f63ce5e652603ed"
   },
   {
