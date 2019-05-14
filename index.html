@@ -15,7 +15,7 @@
 				Inspired by <a href="https://en.wikipedia.org/wiki/Emilia_Clarke" rel="external">Emilia Clarke</a> &#x1F478;
 			</div>
 		</header>
-		<main>
+		<main class="bg" id="main">
 			<article>
 				<div class="page" style="border-color: midnightblue;">
 					<div class="stackable grid">
@@ -115,7 +115,7 @@
 											the sea. Any sea. They did for me. I was born to rule the
 											Seven Kingdoms, and I will.
 										</p>
-										<p style="opacity: 0.75;">*Actually, dragons is all that matters.</p>
+										<p style="opacity: 0.75;">*Actually, <button onclick="toggle()">dragons</button> is all that matters.</p>
 									</div>
 								</div>
 							</div>
@@ -469,6 +469,11 @@
 				var audio = document.getElementById("audio");
 				audio.play();
 			}
+
+      function toggle() {
+        var main = document.getElementById("main");
+        main.classList.toggle('bg-img')
+      }
 		</script>
 	</body>
 </html>
